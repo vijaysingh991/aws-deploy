@@ -19,4 +19,4 @@ jobs:
             cd ${{ secrets.EC2_PROJECT_PATH }}
             git pull origin main
             npm install
-            pm2 restart main || pm2 start main.js
+            /usr/local/bin/pm2 restart main || /usr/local/bin/pm2 start main.js
