@@ -12,7 +12,7 @@ app.get("/health",(req,res)=>{
 })
 
 app.get("/cicd",(req,res)=>{
-    return res.json({status:true,time:new Date(),message:"cicd working perfectly"})
+    return res.json({status:true,time:new Date(),message:"cicd"})
 })
 
 app.listen(port,async()=>{
