@@ -1,7 +1,7 @@
 import { user as User } from "./schema.js"
 export const getMe = async(req,res)=>{
     try{
-        const userId=req.body
+        const {userId}=req.body
         const userData=await User.findOne({
             _id:userId
         })
