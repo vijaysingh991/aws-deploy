@@ -10,6 +10,11 @@ const port=3001
 app.get("/health",(req,res)=>{
     return res.json({status:true,time:new Date(),message:"server running perfectly"})
 })
+
+app.get("/cicd",(req,res)=>{
+    return res.json({status:true,time:new Date(),message:"cicd working perfectly"})
+})
+
 app.listen(port,async()=>{
     await connection()
     console.log(`server started at port - > ${port}`)
