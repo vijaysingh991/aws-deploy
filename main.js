@@ -6,7 +6,7 @@ const app=express()
 app.use(cors())
 app.use(express.json())
 app.use("/user",userRoute)
-const port=3001
+const port=3000
 app.get("/health",(req,res)=>{
     return res.json({status:true,time:new Date(),message:"server running perfectly"})
 })
